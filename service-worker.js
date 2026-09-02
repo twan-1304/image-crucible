@@ -1,5 +1,5 @@
-const SHELL_CACHE = 'image-crucible-shell-v0.7.0';
-const ENGINE_CACHE = 'image-crucible-video-engine-v0.7.0';
+const SHELL_CACHE = 'image-crucible-shell-v0.7.1';
+const ENGINE_CACHE = 'image-crucible-video-engine-v0.7.1';
 const SHELL_ASSETS = [
   './',
   './index.html',
