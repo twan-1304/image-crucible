@@ -1,8 +1,8 @@
-# Image Crucible V0.7.1
+# Image Crucible V0.7.2
 
 Image Crucible handles images and videos entirely in the browser.
 
-## V0.7.1
+## V0.7.2
 
 - Video ETA samples are tracked separately for native WebM and FFmpeg encoding, preventing fast WebM timings from producing absurd estimates for long 4K MP4/MOV jobs.
 
