@@ -1,4 +1,4 @@
-# Image Crucible V0.7.3
+# Image Crucible V0.7.4
 
 Image Crucible handles images and videos entirely in the browser.
 
@@ -6,6 +6,7 @@ Image Crucible handles images and videos entirely in the browser.
 
 - Imports MP4, MOV, WebM, MKV, AVI, MPEG, MTS/M2TS, 3GP and OGV when the browser can read their metadata.
 - Imports supported videos from ZIP archives in the Videos tab. ZIPs receive the same local preflight, integrity checks, duplicate detection and RAM-protected one-at-a-time processing as image archives.
+- Extracted ZIP videos are staged in private browser storage when available instead of being expanded into RAM. A duration-recovery pass also handles streamed MP4/WebM files whose first metadata event reports an infinite duration.
 - Exports MP4, MOV and WebM.
 - H.264 encoding for MP4/MOV, VP8 and VP9 for WebM.
 - Visual-quality (CRF) and explicit bitrate modes.
@@ -46,10 +47,12 @@ WebCodecs (`VideoEncoder` / `VideoDecoder`) as the primary engine, with ffmpeg.w
 
 Publish these runtime files together:
 
-- `image-crucible-v0.7.3.html` (or rename it to `index.html`)
+- `image-crucible-v0.7.4.html` (or rename it to `index.html`)
 - `service-worker.js`
 - `manifest.webmanifest`
-- `icon.svg`
+- `icons/icon.svg`
+- `icons/icon-192.png`
+- `icons/icon-512.png`
 - `THIRD_PARTY_NOTICES.md`
 
 Serve them over HTTPS or localhost so the PWA and direct folder export features can work.

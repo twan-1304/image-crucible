@@ -1,6 +1,6 @@
-const SHELL_CACHE = 'image-crucible-shell-v0.7.3';
-const ENGINE_CACHE = 'image-crucible-video-engine-v0.7.3';
-const SHELL_ASSETS = ['./manifest.webmanifest', './icon.svg'];
+const SHELL_CACHE = 'image-crucible-shell-v0.7.4';
+const ENGINE_CACHE = 'image-crucible-video-engine-v0.7.4';
+const SHELL_ASSETS = ['./', './index.html', './manifest.webmanifest?v=0.7.4', './icons/icon.svg?v=0.7.4', './icons/icon-192.png?v=0.7.4', './icons/icon-512.png?v=0.7.4'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(SHELL_CACHE).then(cache => cache.addAll(SHELL_ASSETS)).then(() => self.skipWaiting()));
