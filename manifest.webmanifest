@@ -1,0 +1,31 @@
+{
+  "name": "ReMix",
+  "short_name": "ReMix",
+  "id": "/",
+  "description": "Local image and video editing, conversion and AI upscaling.",
+  "start_url": "/remix/",
+  "scope": "/remix/",
+  "display": "standalone",
+  "background_color": "#111117",
+  "theme_color": "#111117",
+  "icons": [
+    {
+      "src": "/remix/icons/remix-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/remix/icons/remix-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/remix/icons/remix-default.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

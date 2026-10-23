@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#111117">
+  <title>ReMix — Media workspace</title>
+  <meta name="description" content="Compress photos and videos locally. Import ZIP archives, cut video sections, and download your results.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/remix/icons/remix-32.png">
+  <link rel="icon" type="image/svg+xml" href="/remix/icons/remix-default.svg" data-remix-icon>
+  <link rel="apple-touch-icon" sizes="180x180" href="/remix/icons/remix-180.png">
+  <link rel="manifest" href="./manifest.webmanifest?remix-recovery=1">
+  <script src="/remix/appearance-init.js"></script>
+  <script type="module" src="/remix/seasonal-icons.js"></script>
+  <script type="module" src="./legacy-migration.js?remix-recovery=1"></script>
+  <link rel="stylesheet" href="/remix/style.css">
+  <link rel="stylesheet" href="/remix/themes.css">
+  <script type="module" src="/remix/app.js"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <noscript>ReMix needs JavaScript to edit media. <a href="/remix/">Open ReMix</a>.</noscript>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
